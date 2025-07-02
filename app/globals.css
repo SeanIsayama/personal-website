@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-light-primary: #f0eee6;
+  --bg-dark-primary: #232e46;
+  --box-light: #e3dacc;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  /* Custom background classes */
+  .bg-custom-light-primary {
+    background-color: var(--bg-light-primary);
+  }
+  
+  .bg-custom-dark-primary {
+    background-color: var(--bg-dark-primary);
+  }
+  
+  .bg-custom-box {
+    background-color: var(--box-light);
+  }
+  
+  .dark .bg-custom-box {
+    background-color: var(--bg-dark-primary);
+  }
+} 
